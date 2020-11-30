@@ -1,0 +1,25 @@
+:root {
+    --black: #272727;
+    --gray: #747474;
+    --orange: #ff652f;
+    --yellow: #ffe400;
+    --jade: #14a76c
+}
+
+body {
+    /* background-color: var(--black); */
+}
+
+input {
+    /* width: 100px; */
+}
+
+Navbar .navbar {
+    background-color: var(--orange);
+}
+
+.navbar .navbar-brand {
+    color: var(--black);
+    font-size: 2rem;
+    padding-left: 3rem;
+}

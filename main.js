@@ -2,50 +2,36 @@ $(document).ready(function() { // ready
 
     // global variables
     const save = $('#save');
+    let dataArray = localStorage.getItem('data') ? JSON.parse(localStorage.getItem('data')) : [];
 
+    localStorage.setItem('data', JSON.stringify(dataArray));
+    const data = JSON.parse(localStorage.getItem("data"))
+    console.log(data);
     // ******* events ********
 
     //  ///////  save button event ///////////
     $(save).click(function() { // save inputs to localStorage
-        let date = $('#date').val();
-
         // data object of inputs
         let dayObject = {
+            date: $('#date').val(),
             consumed: $('#consumed').val(),
             burned: $('#burned').val(),
             hrv: $('#hrv').val()
         }
+        dataArray.push(dayObject);
 
-        // clear input boxes
+        //add to local storage 
+        localStorage.setItem('data', JSON.stringify(dataArray));
         $('#date').val('');
         $('#consumed').val('');
         $('#burned').val('');
         $('#hrv').val('');
-
-        //add to local storage 
-        let dayObjStr = JSON.stringify(dayObject);
-        if (localStorage.getItem(date)) { // check to see if date "key" exists
-            let rewrite = confirm("Date already entered. Do you want to replace?");
-            if (rewrite == false) {
-                return false;
-            } else { // rewrite data if confirmed...
-                localStorage.setItem(date, dayObjStr);
-                console.log("not entered");
-            }
-        }
-        localStorage.setItem(date, dayObjStr);
-
-        // Add to local storage values to table /////
-        // TODO - for loop to fill in table with row for each day. Limit to 2 weeks
-        let dayObj = JSON.parse(localStorage.getItem("11/28"));
-
-        console.log("Hello", dayObj, typeof(dayObj), dayObj.consumed);
-
     }); // end save click event
 
-    //  end events
+    // TODO - for loop to fill in table with row for each day. Limit to 2 weeks
 
-    // ////// Function to remove duplicate dates ////////
+    // Add to local storage values to table /////
 
+    //  end events ///////////
 
 }); // end ready...
