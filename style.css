@@ -7,24 +7,35 @@
 }
 
 body {
-    /* background-color: var(--black); */
+    /* background-color: var(--orange);  */
 }
 
-input {
-    /* width: 100px; */
-}
-
-form {
-    margin-bottom: 5rem;
-    overflow: hidden;
-}
-
-Navbar .navbar {
-    background-color: var(--orange);
+.navbar .navbar {
+    background-color: var(--yellow);
 }
 
 .navbar .navbar-brand {
     color: var(--black);
     font-size: 2rem;
     padding-left: 3rem;
+}
+
+
+/* ***** Form ****** */
+
+form {
+    background-color: var(--black);
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+input,
+label {
+    background-color: var(--black);
+    color: yellow;
+}
+
+.table-striped>tbody>tr:nth-child(2n+1)>td,
+.table-striped>tbody>tr:nth-child(2n+1)>th {
+    background-color: var(--orange);
 }
