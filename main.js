@@ -36,17 +36,20 @@ $(document).ready(function() { // ready
 
     // *** Append data to rows in table
     function appedData(date, weight, bmr, consumed, burned, hrv) {
-
+        let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(bmrCalc) +
+            '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +
+            '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(calorieBalance) + '</td></tr>';
+        dataTable.append(tr);
     }
 
     // TODO - !  Limit to 2 weeks
-    viewData() { // add data to table
+    function viewData() { // add data to table
         let dataTable = $('#data-table');
         let rows = $('[data-type="data-row"]');
         rows.remove();
         let tableHeader = '<thead class="thead-dark"><tr><th>Date</th><th>Weight</th><th>BMR</th><th>Calories Consumed</th><th>Calories Burned</th><th>HRV Recovery</th><th>Calorie Balance</th></tr> </thead>';
 
-        dataArray.forEach(function(i) {
+        dataArray.slice().reverse().forEach(function(i) {
             //  BMR and Calorie balance calculations for each day
             let bmrCalc = (88.3 + (13.4 * (i.weight / 2.2)) + (4.8 * (68 / 0.39)) - (5.7 * 60));
             let totalCalories = (bmrCalc + Math.floor(i.burned));
@@ -64,8 +67,8 @@ $(document).ready(function() { // ready
             dataTable.append(tr);
         });
     };
-    // Add to local storage values to table /////
-
     //  end events ///////////
+
+
 
 }); // end ready...
