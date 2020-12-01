@@ -12,7 +12,7 @@ $(document).ready(function() { // ready
 
     //  ///////  save button event ///////////
     $(save).click(function(e) { // save inputs to localStorage
-        e.preventDefault();
+        REFACTOR // e.preventDefault();
         // data object of inputs
         let dayObject = {
             date: $('#date').val(),
@@ -25,29 +25,32 @@ $(document).ready(function() { // ready
 
         //add to local storage 
         localStorage.setItem('data', JSON.stringify(dataArray));
+
         $('#date').val('');
         $('#weight').val('');
         $('#consumed').val('');
         $('#burned').val('');
         $('#hrv').val('');
-        console.log("In click function", dataArray);
         viewData();
     }); // end save click event
 
-    // *** Append data to rows in table
-    function appedData(date, weight, bmr, consumed, burned, hrv) {
-        let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(bmrCalc) +
-            '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +
-            '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(calorieBalance) + '</td></tr>';
-        dataTable.append(tr);
-    }
-
-    // TODO - !  Limit to 2 weeks
-    function viewData() { // add data to table
+    // *** Append data to rows in table ********
+    function appedData(i) {
         let dataTable = $('#data-table');
+
+        // TODO - add " rowspans these rows to make the size appropriate
+        let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(i.bmrCalc) +
+            '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +
+            '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(i.calorieBalance) + '</td></tr>';
+        dataTable.append(tr);
+    } // ***** end appedData()
+
+
+    // TODO - !  Limit to 2 weeks and add an options 
+    function viewData(i) { // add data to table
+        //clear table to add new data
         let rows = $('[data-type="data-row"]');
         rows.remove();
-        let tableHeader = '<thead class="thead-dark"><tr><th>Date</th><th>Weight</th><th>BMR</th><th>Calories Consumed</th><th>Calories Burned</th><th>HRV Recovery</th><th>Calorie Balance</th></tr> </thead>';
 
         dataArray.slice().reverse().forEach(function(i) {
             //  BMR and Calorie balance calculations for each day
@@ -55,20 +58,20 @@ $(document).ready(function() { // ready
             let totalCalories = (bmrCalc + Math.floor(i.burned));
             // console.log(bmrCalc + i.burned, typeof(i.burned));   
             let calorieBalance = i.consumed - totalCalories;
-
-            // console.log("BMR, Total Calories, and Calorie Balance", typeof(bmrCalc), typeof(totalCalories), typeof(calorieBalance));
-            // console.log("In viewData()", i.date, typeof(i.weight), typeof(i.consumed), i.burned, i.hrv);
-
-            //    TODO - !!! need to make this its own function and call it from this event
-            // TODO - add " rowspans these rows to make the size appropriate
-            let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(bmrCalc) +
-                '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +
-                '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(calorieBalance) + '</td></tr>';
-            dataTable.append(tr);
-        });
+            let dayObj = {
+                date: i.date,
+                weight: Math.floor(i.weight),
+                bmrCalc: Math.round(bmrCalc),
+                consumed: Math.floor(i.consumed),
+                burned: Math.floor(i.burned),
+                hrv: Math.floor(i.hrv),
+                calorieBalance: Math.round(calorieBalance)
+            }
+            console.log(dayObj.calorieBalance);
+            appedData(dayObj);
+        }); // ****** end viewData()
     };
     //  end events ///////////
-
 
 
 }); // end ready...

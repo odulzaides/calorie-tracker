@@ -40,6 +40,10 @@ label {
     color: yellow;
 }
 
+.table {
+    margin: 0 auto;
+}
+
 .thead-color {
     background-color: var(--jade);
 }
