@@ -35,18 +35,16 @@ $(document).ready(function() { // ready
     }); // end save click event
 
     // *** Append data to rows in table
-    // function appedData(date, weight, bmr, consumed, burned, hrv) {
+    function appedData(date, weight, bmr, consumed, burned, hrv) {
 
-    // }
+    }
 
-    // TODO - Limit to 2 weeks
-    function viewData() { // add data to table
+    // TODO - !  Limit to 2 weeks
+    viewData() { // add data to table
         let dataTable = $('#data-table');
         let rows = $('[data-type="data-row"]');
         rows.remove();
         let tableHeader = '<thead class="thead-dark"><tr><th>Date</th><th>Weight</th><th>BMR</th><th>Calories Consumed</th><th>Calories Burned</th><th>HRV Recovery</th><th>Calorie Balance</th></tr> </thead>';
-
-
 
         dataArray.forEach(function(i) {
             //  BMR and Calorie balance calculations for each day
@@ -58,7 +56,7 @@ $(document).ready(function() { // ready
             // console.log("BMR, Total Calories, and Calorie Balance", typeof(bmrCalc), typeof(totalCalories), typeof(calorieBalance));
             // console.log("In viewData()", i.date, typeof(i.weight), typeof(i.consumed), i.burned, i.hrv);
 
-            //    TODO - need to make this its own function and call it from this event
+            //    TODO - !!! need to make this its own function and call it from this event
             // TODO - add " rowspans these rows to make the size appropriate
             let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(bmrCalc) +
                 '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +

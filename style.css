@@ -1,17 +1,22 @@
 :root {
-    --black: #272727;
+    /* --black: #272727;
     --gray: #747474;
     --orange: #ff652f;
     --yellow: #ffe400;
-    --jade: #14a76c
+    --jade: #14a76c */
+    --black: rgba(39, 39, 39, 1);
+    --gray: rgba(116, 116, 116, 1);
+    --orange: rgba(255, 101, 47, .8);
+    --yellow: #ffe400;
+    --jade: rgba(20, 167, 108, 1)
 }
 
 body {
     /* background-color: var(--orange);  */
 }
 
-.navbar .navbar {
-    background-color: var(--yellow);
+.navbar {
+    background-color: var(--jade);
 }
 
 .navbar .navbar-brand {
@@ -33,6 +38,10 @@ input,
 label {
     background-color: var(--black);
     color: yellow;
+}
+
+.thead-color {
+    background-color: var(--jade);
 }
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
