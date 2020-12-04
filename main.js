@@ -12,20 +12,19 @@ $(document).ready(function() { // ready
 
     //  ///////  save button event ///////////
     $(save).click(function(e) { // save inputs to localStorage
-        REFACTOR // e.preventDefault();
+        // e.preventDefault();
         // data object of inputs
         let dayObject = {
-            date: $('#date').val(),
-            weight: $('#weight').val(),
-            consumed: $('#consumed').val(),
-            burned: $('#burned').val(),
-            hrv: $('#hrv').val()
-        }
+                date: $('#date').val(), // TODO - !!! convert to date for calculations
+                weight: $('#weight').val(),
+                consumed: $('#consumed').val(),
+                burned: $('#burned').val(),
+                hrv: $('#hrv').val()
+            }
+            //add to dataArray and localStorage ...
         dataArray.push(dayObject);
-
-        //add to local storage 
         localStorage.setItem('data', JSON.stringify(dataArray));
-
+        // clear inputs
         $('#date').val('');
         $('#weight').val('');
         $('#consumed').val('');
@@ -41,7 +40,7 @@ $(document).ready(function() { // ready
         // TODO - add " rowspans these rows to make the size appropriate
         let tr = '<tr data-type="data-row"><td >' + i.date + '</td> <td r>' + Math.floor(i.weight) + '</td><td >' + Math.round(i.bmrCalc) +
             '</td> <td >' + Math.floor(i.consumed) + '</td><td>' + Math.floor(i.burned) +
-            '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(i.calorieBalance) + '</td></tr>';
+            '</td><td>' + Math.floor(i.hrv) + '</td><td>' + Math.round(i.calorieBalance) + '</td><td><a href"#">edit</a></td></tr>';
         dataTable.append(tr);
     } // ***** end appedData()
 
