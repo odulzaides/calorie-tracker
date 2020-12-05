@@ -1,0 +1,22 @@
+{
+    "name": "caltracer",
+    "version": "1.0.0",
+    "description": "Calorie tracker application.",
+    "main": "main.js",
+    "scripts": {
+        "start": "json-server --watch './db/db.json'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/odulzaides/calorie-tracker.git"
+    },
+    "author": "Oscar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/odulzaides/calorie-tracker/issues"
+    },
+    "homepage": "https://github.com/odulzaides/calorie-tracker#readme",
+    "dependencies": {
+        "json-server": "^0.16.3"
+    }
+}
