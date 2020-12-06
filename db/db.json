@@ -1,39 +1,20 @@
 {
-    "DAYS": [{
-            "date": "11/28/2020",
-            "weight": 185,
-            "consumed": 2000,
-            "burned": 400,
-            "hrv": 7.3
-        },
-        {
-            "date": "11/29/2020",
-            "weight": 185,
-            "consumed": 2000,
-            "burned": 400,
-            "hrv": 7.3
-        },
-        {
-            "date": "11/30/2020",
-            "weight": 185,
-            "consumed": 2000,
-            "burned": 400,
-            "hrv": 7.3
-        },
-        {
-            "date": "12/1/2020",
-            "weight": 185,
-            "consumed": 2000,
-            "burned": 400,
-            "hrv": 7.3
-        },
-        {
-            "date": "12/3/2020",
-            "weight": 185,
-            "consumed": 2000,
-            "burned": 400,
-            "hrv": 7.3
-        }
-
-    ]
+  "DAYS": [
+    {
+      "date": "11/28",
+      "weight": "160",
+      "consumed": "1500",
+      "burned": "100",
+      "hrv": "10",
+      "id": 1
+    },
+    {
+      "date": "11/29",
+      "weight": "162",
+      "consumed": "1400",
+      "burned": "400",
+      "hrv": "9",
+      "id": 2
+    }
+  ]
 }
