@@ -1,8 +1,8 @@
 $(document).ready(function() { // ready
 
+
     // global variables
     const save = $('#save');
-
 
     ///////// ////////// ////////     ----   E V E N T S  ----    //////// ////////////// /////////// //////
     // save button event  
@@ -24,14 +24,20 @@ $(document).ready(function() { // ready
         $('#hrv').val('');
         saveInput(dayObject);
     }); // end save click event
-    //xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxx end   E V E N T S  end  xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxx
+
+    //xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxx xxxxx     end      E V E N T S  end             xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxx
+
+
+
     ////////// ///////// //////// /////////         ---- C O N T R O L L E R ----        //////// /////////// /////////// /////////
     //
     // get data from server for diaplay
-    let data = fetch('http://localhost:3000/DAYS')
+
+    let data =
+        fetch('http://localhost:3000/DAYS')
         .then(function(response) {
             return response.json()
-        }).then(datar => viewData(datar))
+        }).then(datar => viewData(datar));
 
     // Save day fitness input data *****  /////
     let saveInput = function(i) {
@@ -81,7 +87,7 @@ $(document).ready(function() { // ready
         let rows = $('[data-type="data-row"]');
         rows.remove();
 
-        i.forEach(function(i) {
+        i.slice().reverse().forEach(function(i) {
             console.log("in loop", i)
                 //  BMR and Calorie balance calculations for each day
             let bmrCalc = (88.3 + (13.4 * (i.weight / 2.2)) + (4.8 * (68 / 0.39)) - (5.7 * 60));

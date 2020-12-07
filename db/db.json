@@ -15,6 +15,46 @@
       "burned": "400",
       "hrv": "9",
       "id": 2
+    },
+    {
+      "date": "12/4/2020",
+      "weight": "160",
+      "consumed": "2000",
+      "burned": "800",
+      "hrv": "10",
+      "id": 3
+    },
+    {
+      "date": "12/5",
+      "weight": "300",
+      "consumed": "20000",
+      "burned": "100",
+      "hrv": "10",
+      "id": 4
+    },
+    {
+      "date": "12/6",
+      "weight": "150",
+      "consumed": "1000",
+      "burned": "100",
+      "hrv": "10",
+      "id": 5
+    },
+    {
+      "date": "12/7",
+      "weight": "160",
+      "consumed": "1850",
+      "burned": "700",
+      "hrv": "9",
+      "id": 6
+    },
+    {
+      "date": "12/8/2020",
+      "weight": "160",
+      "consumed": "2000",
+      "burned": "1200",
+      "hrv": "8",
+      "id": 7
     }
   ]
 }
