@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/fonts/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Calorie Tracker</title>
 </head>
@@ -21,49 +22,76 @@
         - add fields for:
             weight gain/loss from previous day and week 
             last three days calorie balance
- 
-            -->
-    <div class="container-fluid ">
-        <div class="row align-items-center">
-            <div class="col-md-12">
-                <!-- TODO - Do this form in a modal  -->
-                <form class="form-control">
-                    <!-- TODO - include date picker and save as date -->
-                    <label for="date">Date: <input id="date" type="date"></label>
-                    <label for="weight">Weight: <input id="weight" type="number" step="any"></label>
-                    <label for="clarories consumed">Calories Consumed: <input id="consumed" type="number"></label>
-                    <label for="calories burned">Calories burned: <input id="burned" type="number"></label>
-                    <label for="hrevRec">HRVRec: <input id="hrv" type="number" step="any"></label>
-                    <input type="button" value="save" id="save">
-                </form>
+    -->
+
+
+    <div class="container ">
+        <!-- TODO - Style table -->
+        <!--   table title -->
+        <div class="row table-title">
+            <div>
+                <h4>Calorie Table</h4>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-data-input add-data-btn" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus fa-sm"></i>
+                </button>
+        </div>
+        <!-- xxx table title end xxx -->
+
+        <!-- input modal -->
+        <div class="top-modal">
+            <!-- TODO - fix width, top, and left position on 'modal' class-->
+            <div class="modal fade input-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content input-modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="col-md-2 control-label active" for="date">Date:</label>
+                            <input class="form-control input-sm" autofocus="autofocus" id="date" type="date">
+                            <label class="col-md-2 control-label" for="weight">Weight: </label>
+                            <input class="form-control input-sm" id="weight" type="number" step="any">
+                            <label class="col-md-2 control-label" for="clarories consumed">Calories Consumed: </label>
+                            <input class="form-control input-sm" id="consumed" type="number">
+                            <label class="col-md-2 control-label" for="calories burned">Calories burned: </label>
+                            <input class="form-control input-sm" id="burned" type="number">
+                            <label class="col-md-2 control-label" for="hrevRec">HRVRec:</label>
+                            <input class="form-control input-sm" id="hrv" type="number" step="any">
+                            <!-- <input type="button" value="save" id="save"> -->
+                        </div>
+                        <div class="modal-footer split-buttons">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-data-input" id="save">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-10">
-                <!-- TODO - Style table -->
-                <h2>Calorie Table</h2>
-                <table class="table table-bordered table-striped table-hover text-center" id="data-table">
-                    <thead class="thead-color">
-                        <tr>
-                            <th>Date</th>
-                            <th>Weight</th>
-                            <th>BMR</th>
-                            <th>Calories Consumed</th>
-                            <th>Calories Burned</th>
-                            <th>HRV Recovery</th>
-                            <th>Calorie Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </div>
+            <table class="table table-bordered table-striped table-hover text-center" id="data-table">
+                <thead class="thead-color">
+                    <tr>
+                        <th class="m-0 p-0 pt-1 pb-1">Date</th>
+                        <th class="m-0 p-0 pt-1 pb-1">Weight</th>
+                        <th class="m-0 p-0 pt-1 pb-1">BMR</th>
+                        <th class="m-0 p-0 pt-1 pb-1">Calories</th>
+                        <th class="m-0 p-0 pt-1 pb-1">Excercise</th>
+                        <th class="m-0 p-0 pt-1 pb-1">HRV <br> Rec</th>
+                        <th class="m-0 p-0 pt-1 pb-1">Cal <br>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
     </div>
 
-
-
+    <!--    Scripts    -->
     <script src="./src/js/libs/jquery.me.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="module" src="./src/js/main.js"></script>

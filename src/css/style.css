@@ -1,9 +1,4 @@
 :root {
-    /* --black: #272727;
-    --gray: #747474;
-    --orange: #ff652f;
-    --yellow: #ffe400;
-    --jade: #14a76c */
     --black: rgba(39, 39, 39, 1);
     --gray: rgba(116, 116, 116, 1);
     --orange: rgba(255, 101, 47, .8);
@@ -12,36 +7,96 @@
 }
 
 body {
-    /* background-color: var(--orange);  */
+    background-color: var(--gray);
 }
 
+
+/* navbar */
+
 .navbar {
-    background-color: var(--jade);
+    background-color: var(--black);
 }
 
 .navbar .navbar-brand {
-    color: var(--black);
+    color: var(--white);
     font-size: 2rem;
     padding-left: 3rem;
 }
 
 
-/* ***** Form ****** */
+/* end navbar */
 
-form {
-    background-color: var(--black);
-    margin-bottom: 5rem;
-    overflow: hidden;
+
+/* input Modal */
+
+
+/* TODO - style modal */
+
+.modal-content {
+    background-color: var(--orange);
 }
 
-input,
-label {
-    background-color: var(--black);
-    color: yellow;
+.modal-content input {
+    background-color: var(--jade);
 }
+
+.input-modal-content .split-buttons {
+    justify-content: space-between;
+}
+
+
+/******** table ********/
+
+
+/* Table title */
+
+.table-title {
+    margin-top: 6rem;
+    background-color: var(--black);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-title h4 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 0;
+    color: var(--jade);
+    position: relative;
+    top: -1rem;
+}
+
+.table-title button {
+    margin-right: 3rem;
+}
+
+.add-data-btn {
+    margin-bottom: 1.1rem;
+}
+
+.btn-data-input,
+.btn-data-input:active {
+    background-color: var(--jade);
+}
+
+.btn-data-input:hover,
+.btn-data-input:focus {
+    background-color: var(--orange);
+}
+
+
+/* table body */
 
 .table {
     margin: 0 auto;
+}
+
+.table thead th,
+.table tr td {
+    width: 5rem;
 }
 
 .thead-color {
