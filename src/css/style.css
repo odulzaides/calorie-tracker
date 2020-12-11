@@ -1,9 +1,12 @@
 :root {
     --black: rgba(39, 39, 39, 1);
     --gray: rgba(116, 116, 116, 1);
-    --orange: rgba(255, 101, 47, .8);
-    --yellow: #ffe400;
-    --jade: rgba(20, 167, 108, 1)
+    --lightGray: rgba(116, 116, 116, .8);
+    --orange: rgba(255, 101, 47, .6);
+    --brightOrange: rgba(255, 101, 47, 1);
+    --yellow: rgba(255, 228, 0, .2);
+    --brightYellow: rgba(255, 228, 0, .4);
+    --jade: rgba(20, 167, 108, .9)
 }
 
 body {
@@ -18,7 +21,7 @@ body {
 }
 
 .navbar .navbar-brand {
-    color: var(--white);
+    color: var(--brightOrange);
     font-size: 2rem;
     padding-left: 3rem;
 }
@@ -27,17 +30,46 @@ body {
 /* end navbar */
 
 
+/* dashboard */
+
+.numbers {
+    margin-top: 4rem;
+}
+
+.numbers .rect {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: var(--brightOrange);
+    background: var(--black);
+    width: 17rem;
+    height: 17rem;
+    padding-top: 6vmin;
+    margin: 2rem;
+    border: var(--brightOrange) solid 2px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 50px 0px var(--orange);
+}
+
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: var(--brightOrange);
+}
+
+
 /* input Modal */
 
 
 /* TODO - style modal */
 
 .modal-content {
-    background-color: var(--orange);
+    background-color: var(--gray);
 }
 
-.modal-content input {
-    background-color: var(--jade);
+.modal-content input,
+.modal-content input:focus {
+    background-color: var(--orange);
 }
 
 .input-modal-content .split-buttons {
@@ -52,8 +84,9 @@ body {
 
 .table-title {
     margin-top: 6rem;
+    padding-top: 2rem;
     background-color: var(--black);
-    height: 50px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,6 +96,7 @@ body {
 .table-title h4 {
     margin-top: 2rem;
     margin-left: 1rem;
+    font-style: 2rem;
     padding: 0;
     color: var(--jade);
     position: relative;
@@ -90,20 +124,28 @@ body {
 
 /* table body */
 
+table>tr>td {
+    max-width: 64px;
+}
+
 .table {
     margin: 0 auto;
 }
 
-.table thead th,
-.table tr td {
-    width: 5rem;
+.table thead th:first-child {
+    width: 7%;
+}
+
+.table thead th:nth-child(2) {
+    width: 7%;
 }
 
 .thead-color {
-    background-color: var(--jade);
+    background-color: var(--black);
+    color: var(--orange)
 }
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
 .table-striped>tbody>tr:nth-child(2n+1)>th {
-    background-color: var(--orange);
+    background-color: var(--jade);
 }

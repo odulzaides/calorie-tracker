@@ -26,7 +26,23 @@
 
 
     <div class="container ">
-        <!-- TODO - Style table -->
+        <!-- dashboard  -------------------------------------------- -->
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+            <div class="rect align-content-center">
+                <h1>-321</h1>
+                <p>3 Day Total</p>
+            </div>
+            <div class="rect">
+                <h1>8.4</h1>
+                <p>7 Day HRV</p>
+            </div>
+            <div class="rect">
+                <h1>1056</h1>
+                <p>Ticket</p>
+            </div>
+        </div>
+        <!-- xxx end dashboard xxx -------------------------------------------->
+
         <!--   table title -->
         <div class="row table-title">
             <div>
@@ -34,12 +50,12 @@
             </div>
 
             <button type="button" class="btn btn-primary btn-data-input add-data-btn" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fas fa-plus fa-sm"></i>
+                    <i class="fas fa-plus fa-sm" data-toggle="tooltip" title="Add daily nutrition info" ></i>
                 </button>
         </div>
         <!-- xxx table title end xxx -->
 
-        <!-- input modal -->
+        <!-- input modal -------------------------------------->
         <div class="top-modal">
             <!-- TODO - fix width, top, and left position on 'modal' class-->
             <div class="modal fade input-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,11 +88,14 @@
                 </div>
             </div>
         </div>
+        <!-- xxx end input modal xxx -------------------------->
+
+        <!-- data table -->
         <div class="row">
             <table class="table table-bordered table-striped table-hover text-center" id="data-table">
                 <thead class="thead-color">
                     <tr>
-                        <th class="m-0 p-0 pt-1 pb-1">Date</th>
+                        <th class="w-10 m-0 p-0 pt-1 pb-1">Date</th>
                         <th class="m-0 p-0 pt-1 pb-1">Weight</th>
                         <th class="m-0 p-0 pt-1 pb-1">BMR</th>
                         <th class="m-0 p-0 pt-1 pb-1">Calories</th>
@@ -89,6 +108,7 @@
                 </tbody>
             </table>
         </div>
+        <!-- xxx data table xxx -->
     </div>
 
     <!--    Scripts    -->

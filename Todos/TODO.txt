@@ -1,7 +1,7 @@
 
      List to get done
-    TODO - Make a modal for the form.
     TODO - Style app
+    TODO - add tooltips
     TODO - ADD login and authentication
     TODO - code an edit function/ lookup individual records
     TODO - code a filter function
