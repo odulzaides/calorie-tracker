@@ -127,6 +127,38 @@
       "burned": "0",
       "hrv": "8.1",
       "id": 16
+    },
+    {
+      "date": "12/14",
+      "weight": "184",
+      "consumed": "850",
+      "burned": "0",
+      "hrv": "8.1",
+      "id": 17
+    },
+    {
+      "date": "12/15",
+      "weight": "183",
+      "consumed": "1000",
+      "burned": "0",
+      "hrv": "7.3",
+      "id": 18
+    },
+    {
+      "date": "12/16",
+      "weight": "183",
+      "consumed": "1025",
+      "burned": "0",
+      "hrv": "8.1",
+      "id": 19
+    },
+    {
+      "date": "12/17",
+      "weight": "182",
+      "consumed": "900",
+      "burned": "0",
+      "hrv": "8.3",
+      "id": 20
     }
   ]
 }
