@@ -8,3 +8,9 @@ export let getData = (function() {
         }).then(datar => viewData(datar));
 
 })();
+
+// write function to get last 3 days cal balance, 7 day hrv avg, difference between weight 7 days ago and today.
+
+export function fillDashboard() {
+    console.log("Im the dashboard function");
+}
