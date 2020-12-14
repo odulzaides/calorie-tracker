@@ -1,3 +1,11 @@
+/* @import url('../fonts/google_fonts/Roboto-BlackItalic.ttf');
+@import url('../fonts/google_fonts/Roboto-Bold.ttf');
+@import url('../fonts/google_fonts/Roboto-Thin.ttf'); */
+
+
+/* TODO - See why fonts not loading */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
 :root {
     --black: rgba(39, 39, 39, 1);
     --gray: rgba(116, 116, 116, 1);
@@ -10,121 +18,89 @@
 }
 
 body {
-    background-color: var(--gray);
+    background-color: white;
+    font-family: 'Roboto', 'sans';
 }
 
 
 /* navbar */
 
 .navbar {
-    background-color: var(--black);
+    /* background-color: var(--black); */
+    border-bottom: solid .5px var(--brightOrange);
 }
 
 .navbar .navbar-brand {
     color: var(--brightOrange);
-    font-size: 2rem;
-    padding-left: 3rem;
+    font-size: 3rem;
+    font-style: italic;
+    font-stretch: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-
-
-/* end navbar */
 
 
 /* dashboard */
 
-.numbers {
-    margin-top: 4rem;
-    height: 27rem;
-    background: black;
+.dashboard {
+    margin-top: 8rem;
+    height: 47rem;
+    /* background: black; */
     border-radius: 15px;
     /* align-items: center; */
 }
 
-.numbers .rect {
+.dashboard .rect {
     text-align: center;
     align-items: center;
     position: relative;
     z-index: 1;
     color: var(--brightOrange);
     background: var(--black);
-    width: 17rem;
-    height: 17rem;
+    width: 25rem;
+    height: 25rem;
     padding-top: 6vmin;
-    margin: 2rem 2.7rem;
+    margin: 2rem 4rem;
     border: var(--brightOrange) solid 2px;
     border-radius: 50%;
     box-shadow: 1px 2px 50px 0px var(--orange);
 }
 
-.numbers .rect h1 {
+.dashboard .rect h1 {
     font-size: 4rem;
-    margin-top: -.5rem;
+    margin-top: -1rem;
     margin-bottom: 0.5rem;
     color: var(--brightOrange);
 }
 
-.numbers .rect .second-figure {
-    /* font-size: 4rem; */
-    margin-top: .1rem;
-    margin-bottom: 0.5rem;
-    color: var(--brightOrange);
-}
-
-.numbers .rect h3 {
-    /* font-size: 4rem; */
-    margin-top: 4rem;
-    margin-bottom: 0.5rem;
-    color: var(--brightOrange);
-}
-
-.numbers .rect p {
-    margin-top: -.2rem;
-    margin-bottom: 1.7rem;
-    color: var(--jade);
-}
-
-
-/* input Modal */
-
-.modal-content {
-    background-color: var(--gray);
-}
-
-.modal-content input,
-.modal-content input:focus {
-    background-color: var(--orange);
-}
-
-.input-modal-content .split-buttons {
-    justify-content: space-between;
-}
-
-
-/******** table ********/
-
-
-/* Table title */
-
-.table-title {
-    margin-top: 6rem;
-    padding-top: 2rem;
-    background-color: var(--black);
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.table-title h4 {
+.dashboard .rect h2 {
     margin-top: 2rem;
-    margin-left: 1rem;
-    font-style: 2rem;
-    padding: 0;
-    color: var(--jade);
-    position: relative;
-    top: -1rem;
 }
+
+.dashboard .rect .second-figure {
+    /* font-size: 4rem; */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--brightOrange);
+}
+
+.dashboard .rect h3 {
+    /* font-size: 4rem; */
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--brightOrange);
+}
+
+.dashboard .rect h4 {
+    margin-top: .5rem;
+    margin-bottom: 2.2rem;
+    color: var(--jade);
+    font-weight: 800;
+}
+
+
+/*  modal utilities */
 
 .table-title button {
     margin-right: 3rem;
@@ -136,13 +112,52 @@ body {
 
 .btn-data-input,
 .btn-data-input:active {
-    background-color: var(--jade);
+    background-color: var(--brightOrange);
+    height: 4rem;
 }
 
 .btn-data-input:hover,
 .btn-data-input:focus {
     background-color: var(--orange);
 }
+
+
+/* Modals */
+
+
+/* input Modal */
+
+.modal-title {
+    color: var(--brightOrange)
+}
+
+.modal-content {
+    background-color: white;
+}
+
+.modal-content input,
+.modal-content input:focus {
+    background-color: var(--orange);
+}
+
+.input-modal-content .split-buttons,
+.dashboard .split-buttons {
+    justify-content: space-between;
+}
+
+
+/* Table Modal */
+
+.table-modal {
+    width: 150%;
+}
+
+.data-table thead tr th:first-child {
+    width: 20%;
+}
+
+
+/** table **/
 
 
 /* table body */
@@ -164,11 +179,11 @@ table>tr>td {
 }
 
 .thead-color {
-    background-color: var(--black);
-    color: var(--orange)
+    background-color: var(--brightOrange);
+    color: var(--black)
 }
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
 .table-striped>tbody>tr:nth-child(2n+1)>th {
-    background-color: var(--jade);
+    background-color: var(--orange);
 }

@@ -1,5 +1,7 @@
 
      List to get done
+    TODO - Fix css file. Remove old classes.
+    TODO - Add some more training figures here. time, miles, tss etc
     TODO - Style app
     TODO - add tooltips
     TODO - ADD login and authentication

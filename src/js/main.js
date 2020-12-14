@@ -8,6 +8,8 @@ $(document).ready(function() { // ready
 
     // global variables
     const save = $('#save');
+
+    submitInput();
     fillDashboard();
 
 }); // end ready...

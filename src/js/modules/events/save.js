@@ -1,6 +1,5 @@
 import { saveInput } from '../controllers/saveInput.js';
 
-
 export function submitInput() {
     console.log("clicked save");
     $(save).click(function(e) {
@@ -10,8 +9,7 @@ export function submitInput() {
             consumed: $('#consumed').val(),
             burned: $('#burned').val(),
             hrv: $('#hrv').val()
-        }
-
+        };
         $('#date').val('');
         $('#weight').val('');
         $('#consumed').val('');
