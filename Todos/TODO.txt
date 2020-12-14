@@ -1,5 +1,6 @@
 
      List to get done
+     TODO - Fix css file. Remove old classes.
     TODO - Style app
     TODO - add tooltips
     TODO - ADD login and authentication

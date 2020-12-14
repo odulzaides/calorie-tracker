@@ -27,14 +27,11 @@ body {
 }
 
 
-/* end navbar */
-
-
 /* dashboard */
 
 .numbers {
     margin-top: 4rem;
-    height: 27rem;
+    height: 47rem;
     background: black;
     border-radius: 15px;
     /* align-items: center; */
@@ -84,47 +81,7 @@ body {
 }
 
 
-/* input Modal */
-
-.modal-content {
-    background-color: var(--gray);
-}
-
-.modal-content input,
-.modal-content input:focus {
-    background-color: var(--orange);
-}
-
-.input-modal-content .split-buttons {
-    justify-content: space-between;
-}
-
-
-/******** table ********/
-
-
-/* Table title */
-
-.table-title {
-    margin-top: 6rem;
-    padding-top: 2rem;
-    background-color: var(--black);
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.table-title h4 {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    font-style: 2rem;
-    padding: 0;
-    color: var(--jade);
-    position: relative;
-    top: -1rem;
-}
+/*  modal utilities */
 
 .table-title button {
     margin-right: 3rem;
@@ -137,12 +94,36 @@ body {
 .btn-data-input,
 .btn-data-input:active {
     background-color: var(--jade);
+    height: 4rem;
 }
 
 .btn-data-input:hover,
 .btn-data-input:focus {
     background-color: var(--orange);
 }
+
+
+/* input Modal */
+
+.modal-content {
+    background-color: var(--gray);
+}
+
+.modal-content input,
+.modal-content input:focus {
+    background-color: var(--orange);
+}
+
+.input-modal-content .split-buttons,
+.numbers .split-buttons {
+    justify-content: space-between;
+}
+
+
+/* Table Modal */
+
+
+/** table **/
 
 
 /* table body */

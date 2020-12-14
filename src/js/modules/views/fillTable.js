@@ -23,7 +23,7 @@ export let viewData = function(i) {
 };
 
 //  Add data to table in HTML
-function appendData(i) { // add data to table
+function appendData(i) {
     let dataTable = $('#data-table');
     let tr = '<tr data-type="data-row"><td class="m-0 p-0 pt-1 pb-1">' + i.date + '</td> <td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.weight) + '</td><td class="m-0 p-0 pt-1 pb-1">' + Math.round(i.bmrCalc) +
         '</td> <td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.consumed) + '</td><td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.burned) +

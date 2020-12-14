@@ -19,55 +19,45 @@
          Calorie Tracker
         </a>
     </nav>
-    <!-- TODO - Dashboard showing last three days 
-        - add fields for:
-            weight gain/loss from previous day and week 
-            last three days calorie balance
-    -->
-
-
+    <!-- Sections -->
     <div class="container ">
-        <!-- dashboard  -------------------------------------------- -->
-        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center col--1-sm">
-            <div class="rect align-content-center">
-                <h1>-321</h1>
-                <p>3 Calorie Day Balance</p>
-                <h3 class="second-figure">-787</h3>
-                <p>7 Day Bal</p>
-                <h3>Calories</h3>
+        <!-- dashboard  -->
+        <div class="numbers d-flex flex-md-row flex-wrap  col--1-sm">
+            <div class="row">
+                <div class="rect align-content-center">
+                    <h1 id="3-day-balance">-321</h1>
+                    <p>3 Calorie Day Balance</p>
+                    <h3 class="second-figure" id="7-day-balance">-787</h3>
+                    <p>7 Day Bal</p>
+                    <h3>Calories</h3>
+                </div>
+                <div class="rect">
+                    <h1>180</h1>
+                    <p>1 Day Flux</p>
+                    <h3 class="second-figure">1</h3>
+                    <p>7 Day Flux</p>
+                    <h3>Weight</h3>
+                </div>
+                <div class="rect">
+                    <h1>8.4</h1>
+                    <p>Yesterday</p>
+                    <h3 class="second-figure">8.4</h3>
+                    <p>7 Day HRV Avg</p>
+                    <h3>HRV</h3>
+                </div>
             </div>
-            <div class="rect">
-                <h1>180</h1>
-                <p>1 Day Flux</p>
-                <h3 class="second-figure">1</h3>
-                <p>7 Day Flux</p>
-                <h3>Weight</h3>
-            </div>
-            <div class="rect">
-                <h1>8.4</h1>
-                <p>Yesterday</p>
-                <h3 class="second-figure">8.4</h3>
-                <p>7 Day HRV Avg</p>
-                <h3>HRV</h3>
-            </div>
-        </div>
-        <!-- xxx end dashboard xxx -------------------------------------------->
-
-        <!--   table title -->
-
-        <div class="row table-title">
-            <div>
-                <h4>Calorie Table</h4>
-            </div>
-
-            <button type="button" class="btn btn-primary btn-data-input add-data-btn" data-toggle="modal" data-target="#exampleModal">
+            <div class="row">
+                <div class="d-flex flex-md-row flex-wrap  col--1-sm">
+                    <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModalLong">
+                        Daily Entries
+                      </button>
+                    <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModal">
                         <i class="fas fa-plus fa-sm" data-toggle="tooltip" title="Add daily nutrition info" ></i>
                     </button>
+                </div>
+            </div>
         </div>
-
-        <!-- xxx table title end xxx -->
-
-        <!-- input modal -------------------------------------->
+        <!-- input modal -->
         <div class="top-modal">
             <!-- TODO - fix width, top, and left position on 'modal' class-->
             <div class="modal fade input-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,8 +66,8 @@
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                         </div>
                         <div class="modal-body">
                             <label class="col-md-2 control-label active" type="date" for="date">Date:</label>
@@ -100,32 +90,46 @@
                 </div>
             </div>
         </div>
-        <!-- xxx end input modal xxx -------------------------->
-        <!-- TODO - Make table into modal -->
-        <!-- data table -->
-        <div class="row">
-            <table class="table table-bordered table-striped table-hover text-center" id="data-table">
-                <thead class="thead-color">
-                    <tr>
-                        <th class="w-10 m-0 p-0 pt-1 pb-1">Date</th>
-                        <th class="m-0 p-0 pt-1 pb-1">Weight</th>
-                        <th class="m-0 p-0 pt-1 pb-1">BMR</th>
-                        <th class="m-0 p-0 pt-1 pb-1">Calories</th>
-                        <th class="m-0 p-0 pt-1 pb-1">Excercise</th>
-                        <th class="m-0 p-0 pt-1 pb-1">HRV <br> Rec</th>
-                        <th class="m-0 p-0 pt-1 pb-1">Cal <br>Balance</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+        <!-- xxx end input modal xxx -->
+        <!--- table modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Daily Input Table</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-striped table-hover text-center" id="data-table">
+                            <thead class="thead-color">
+                                <tr>
+                                    <th class="w-10 m-0 p-0 pt-1 pb-1">Date</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">Weight</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">BMR</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">Calories</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">Excercise</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">HRV <br> Rec</th>
+                                    <th class="m-0 p-0 pt-1 pb-1">Cal <br>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- End Table modal -->
 
-        <!-- xxx data table xxx -->
+        <!-- xxx end dashboard xxx -->
+
     </div>
 
-    <!--    Scripts    -->
-    <script src="./src/js/libs/jquery.me.js"></script>
+    Scripts
+    <!-- <script src="./src/js/libs/jquery.me.js"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="module" src="./src/js/main.js"></script>
 </body>

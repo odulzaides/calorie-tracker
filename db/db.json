@@ -175,6 +175,62 @@
       "burned": "0",
       "hrv": "7.9",
       "id": 22
+    },
+    {
+      "date": "12/20",
+      "weight": "182",
+      "consumed": "1100",
+      "burned": "0",
+      "hrv": "9",
+      "id": 23
+    },
+    {
+      "date": "12/21",
+      "weight": "182",
+      "consumed": "800",
+      "burned": "100",
+      "hrv": "8",
+      "id": 24
+    },
+    {
+      "date": "12/22",
+      "weight": "181",
+      "consumed": "937",
+      "burned": "0",
+      "hrv": "8",
+      "id": 25
+    },
+    {
+      "date": "12/23",
+      "weight": "170",
+      "consumed": "1800",
+      "burned": "1200",
+      "hrv": "9",
+      "id": 26
+    },
+    {
+      "date": "12/24",
+      "weight": "167",
+      "consumed": "2500",
+      "burned": "1600",
+      "hrv": "7.6",
+      "id": 27
+    },
+    {
+      "date": "12/25",
+      "weight": "181",
+      "consumed": "1100",
+      "burned": "0",
+      "hrv": "7.7",
+      "id": 28
+    },
+    {
+      "date": "12/26",
+      "weight": "183",
+      "consumed": "1000",
+      "burned": "0",
+      "hrv": "8.4",
+      "id": 29
     }
   ]
 }
