@@ -18,45 +18,43 @@
         <a class="navbar-brand" href="#">
          Calorie Tracker
         </a>
+
+        <div class="d-flex flex-md-row flex-wrap justify-content-around col--1-sm">
+            <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModalLong">
+                    Daily Entries
+                  </button>
+            <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus fa-sm" data-toggle="tooltip" title="Add daily nutrition info" ></i>
+                </button>
+        </div>
     </nav>
     <!-- Sections -->
-    <div class="container ">
+    <div class="container-fluid">
         <!-- dashboard  -->
-        <div class="numbers d-flex flex-md-row flex-wrap  col--1-sm">
-            <div class="row">
-                <div class="rect align-content-center">
-                    <h1 id="3-day-balance">-321</h1>
-                    <p>3 Calorie Day Balance</p>
-                    <h3 class="second-figure" id="7-day-balance">-787</h3>
-                    <p>7 Day Bal</p>
-                    <h3>Calories</h3>
-                </div>
-                <div class="rect">
-                    <h1>180</h1>
-                    <p>1 Day Flux</p>
-                    <h3 class="second-figure">1</h3>
-                    <p>7 Day Flux</p>
-                    <h3>Weight</h3>
-                </div>
-                <div class="rect">
-                    <h1>8.4</h1>
-                    <p>Yesterday</p>
-                    <h3 class="second-figure">8.4</h3>
-                    <p>7 Day HRV Avg</p>
-                    <h3>HRV</h3>
-                </div>
+        <div class="numbers d-flex flex-md-row flex-wrap  justify-content-center col--1-sm">
+            <div class="rect align-content-center">
+                <h1 id="3-day-balance">-321</h1>
+                <p>3 Calorie Day Balance</p>
+                <h3 class="second-figure" id="7-day-balance">-787</h3>
+                <p>7 Day Bal</p>
+                <h3>Calories</h3>
             </div>
-            <div class="row">
-                <div class="d-flex flex-md-row flex-wrap  col--1-sm">
-                    <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModalLong">
-                        Daily Entries
-                      </button>
-                    <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModal">
-                        <i class="fas fa-plus fa-sm" data-toggle="tooltip" title="Add daily nutrition info" ></i>
-                    </button>
-                </div>
+            <div class="rect">
+                <h1>180</h1>
+                <p>1 Day Flux</p>
+                <h3 class="second-figure">1</h3>
+                <p>7 Day Flux</p>
+                <h3>Weight</h3>
+            </div>
+            <div class="rect">
+                <h1>8.4</h1>
+                <p>Yesterday</p>
+                <h3 class="second-figure">8.4</h3>
+                <p>7 Day HRV Avg</p>
+                <h3>HRV</h3>
             </div>
         </div>
+
         <!-- input modal -->
         <div class="top-modal">
             <!-- TODO - fix width, top, and left position on 'modal' class-->

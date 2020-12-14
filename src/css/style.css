@@ -10,14 +10,15 @@
 }
 
 body {
-    background-color: var(--gray);
+    background-color: white;
 }
 
 
 /* navbar */
 
 .navbar {
-    background-color: var(--black);
+    /* background-color: var(--black); */
+    border-bottom: solid .5px var(--brightOrange);
 }
 
 .navbar .navbar-brand {
@@ -32,7 +33,7 @@ body {
 .numbers {
     margin-top: 4rem;
     height: 47rem;
-    background: black;
+    /* background: black; */
     border-radius: 15px;
     /* align-items: center; */
 }
@@ -93,7 +94,7 @@ body {
 
 .btn-data-input,
 .btn-data-input:active {
-    background-color: var(--jade);
+    background-color: var(--brightOrange);
     height: 4rem;
 }
 
@@ -103,10 +104,14 @@ body {
 }
 
 
-/* input Modal */
+/* Modals */
+
+.modal-title {
+    color: var(--brightOrange)
+}
 
 .modal-content {
-    background-color: var(--gray);
+    background-color: white;
 }
 
 .modal-content input,
@@ -145,11 +150,11 @@ table>tr>td {
 }
 
 .thead-color {
-    background-color: var(--black);
-    color: var(--orange)
+    background-color: var(--brightOrange);
+    color: var(--black)
 }
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
 .table-striped>tbody>tr:nth-child(2n+1)>th {
-    background-color: var(--jade);
+    background-color: var(--orange);
 }
