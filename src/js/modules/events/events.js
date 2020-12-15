@@ -10,6 +10,7 @@ export function submitInput() {
             burned: $('#burned').val(),
             hrv: $('#hrv').val()
         };
+        console.log(dayObject.weight);
 
         $('#date').val('');
         $('#weight').val('');

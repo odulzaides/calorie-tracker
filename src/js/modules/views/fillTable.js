@@ -16,13 +16,14 @@ export let viewData = function(i) {
         let calorieBalance = i.consumed - totalCalories;
         let dayObj = {
                 date: i.date,
-                weight: Math.floor(i.weight),
+                weight: Number(i.weight),
                 bmrCalc: Math.round(bmrCalc),
                 consumed: Math.floor(i.consumed),
                 burned: Math.floor(i.burned),
                 hrv: Math.floor(i.hrv),
                 calorieBalance: Math.round(calorieBalance)
             }
+            // console.log("Weight----", Math.floor(i.weight));
             // Fill daily totals table
         appendData(dayObj);
 
@@ -31,16 +32,17 @@ export let viewData = function(i) {
         let dashboardObj = {
             weight: Math.floor(i.weight),
             burned: Math.floor(i.burned),
-            hrv: Math.floor(i.hrv),
+            hrv: Number(i.hrv),
             calorieBalance: Math.round(calorieBalance)
         }
+        console.log("Hello.... ", typeof(i.hrv), dashboardObj.hrv, typeof(dashboardObj.hrv));
         dashboardObjects.push(dashboardObj);
         dashboardData(dashboardObjects);
     });
 };
-
 //  Add data to table in HTML
 function appendData(i) {
+    // console.log("Append Data-----", Math.floor(i.weight));
     let dataTable = $('#data-table');
     let tr = '<tr data-type="data-row"><td class="m-0 p-0 pt-1 pb-1">' + i.date + '</td> <td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.weight) + '</td><td class="m-0 p-0 pt-1 pb-1">' + Math.round(i.bmrCalc) +
         '</td> <td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.consumed) + '</td><td class="m-0 p-0 pt-1 pb-1">' + Math.floor(i.burned) +
