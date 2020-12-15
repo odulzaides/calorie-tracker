@@ -18,5 +18,9 @@
     "homepage": "https://github.com/odulzaides/calorie-tracker#readme",
     "dependencies": {
         "json-server": "^0.16.3"
+    },
+    "devDependencies": {
+        "jquery": "^3.5.1",
+        "jqueryui": "^1.11.1"
     }
 }

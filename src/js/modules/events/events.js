@@ -4,12 +4,13 @@ export function submitInput() {
     console.log("clicked save");
     $(save).click(function(e) {
         let dayObject = {
-            date: $('#date').val(),
+            date: $('#datepicker').val(),
             weight: $('#weight').val(),
             consumed: $('#consumed').val(),
             burned: $('#burned').val(),
             hrv: $('#hrv').val()
         };
+
         $('#date').val('');
         $('#weight').val('');
         $('#consumed').val('');

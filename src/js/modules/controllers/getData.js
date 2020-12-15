@@ -9,7 +9,3 @@ export let getData = (function() {
         }).then(datar => viewData(datar));
 
 })();
-
-export function fillDashboard() {
-    console.log("Im the dashboard function");
-}
