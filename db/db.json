@@ -1,299 +1,292 @@
 {
-  "DAYS": [
-    {
-      "date": "11/28",
-      "weight": "185",
-      "consumed": "2300",
-      "burned": "619",
-      "hrv": "7.3",
-      "id": 1
-    },
-    {
-      "date": "11/29",
-      "weight": "180",
-      "consumed": "2000",
-      "burned": "0",
-      "hrv": "9",
-      "id": 2
-    },
-    {
-      "date": "11/30",
-      "weight": "175",
-      "consumed": "1900",
-      "burned": "300",
-      "hrv": "9",
-      "id": 3
-    },
-    {
-      "date": "12/1",
-      "weight": "165",
-      "consumed": "2800",
-      "burned": "1722",
-      "hrv": "9",
-      "id": 4
-    },
-    {
-      "date": "12/2",
-      "weight": "160",
-      "consumed": "2000",
-      "burned": "1200",
-      "hrv": "8",
-      "id": 5
-    },
-    {
-      "date": "12/3",
-      "weight": "165",
-      "consumed": "2200",
-      "burned": "1200",
-      "hrv": "9",
-      "id": 6
-    },
-    {
-      "date": "12/4",
-      "weight": "167",
-      "consumed": "2000",
-      "burned": "500",
-      "hrv": "7.6",
-      "id": 7
-    },
-    {
-      "date": "12/5",
-      "weight": "165",
-      "consumed": "1800",
-      "burned": "1800",
-      "hrv": "7.6",
-      "id": 8
-    },
-    {
-      "date": "12/6",
-      "weight": "200",
-      "consumed": "1300",
-      "burned": "100",
-      "hrv": "8",
-      "id": 9
-    },
-    {
-      "date": "12/7",
-      "weight": "167",
-      "consumed": "1800",
-      "burned": "600",
-      "hrv": "8",
-      "id": 10
-    },
-    {
-      "date": "12/8",
-      "weight": "162",
-      "consumed": "2500",
-      "burned": "1200",
-      "hrv": "7.6",
-      "id": 11
-    },
-    {
-      "date": "12/9",
-      "weight": "159",
-      "consumed": "1800",
-      "burned": "0",
-      "hrv": "8.1",
-      "id": 12
-    },
-    {
-      "date": "12/10",
-      "weight": "186",
-      "consumed": "1800",
-      "burned": "300",
-      "hrv": "7.6",
-      "id": 13
-    },
-    {
-      "date": "12/11",
-      "weight": "160",
-      "consumed": "2000",
-      "burned": "100",
-      "hrv": "8",
-      "id": 14
-    },
-    {
-      "date": "12/12",
-      "weight": "185.2",
-      "consumed": "900",
-      "burned": "0",
-      "hrv": "8.1",
-      "id": 15
-    },
-    {
-      "date": "12/13",
-      "weight": "185",
-      "consumed": "900",
-      "burned": "0",
-      "hrv": "8.1",
-      "id": 16
-    },
-    {
-      "date": "12/14",
-      "weight": "184",
-      "consumed": "850",
-      "burned": "0",
-      "hrv": "8.1",
-      "id": 17
-    },
-    {
-      "date": "12/15",
-      "weight": "183",
-      "consumed": "1000",
-      "burned": "0",
-      "hrv": "7.3",
-      "id": 18
-    },
-    {
-      "date": "12/16",
-      "weight": "183",
-      "consumed": "1025",
-      "burned": "0",
-      "hrv": "8.1",
-      "id": 19
-    },
-    {
-      "date": "12/17",
-      "weight": "182",
-      "consumed": "900",
-      "burned": "0",
-      "hrv": "8.3",
-      "id": 20
-    },
-    {
-      "date": "12/18",
-      "weight": "181",
-      "consumed": "1000",
-      "burned": "0",
-      "hrv": "8.9",
-      "id": 21
-    },
-    {
-      "date": "12/19",
-      "weight": "179",
-      "consumed": "890",
-      "burned": "0",
-      "hrv": "7.9",
-      "id": 22
-    },
-    {
-      "date": "12/20",
-<<<<<<< HEAD
-      "weight": "181",
-      "consumed": "1100",
-      "burned": "",
-      "hrv": "8.4",
-=======
-      "weight": "182",
-      "consumed": "1100",
-      "burned": "0",
-      "hrv": "9",
->>>>>>> table-modal
-      "id": 23
-    },
-    {
-      "date": "12/21",
-<<<<<<< HEAD
-      "weight": "180",
-      "consumed": "1000",
-      "burned": "100",
-      "hrv": "8.4",
-      "id": 24
-    },
-    {
-      "date": "2020-12-22",
-      "weight": "181",
-      "consumed": "5000",
-      "burned": "4000",
-      "hrv": "6",
-      "id": 25
-=======
-      "weight": "182",
-      "consumed": "800",
-      "burned": "100",
-      "hrv": "8",
-      "id": 24
-    },
-    {
-      "date": "12/22",
-      "weight": "181",
-      "consumed": "937",
-      "burned": "0",
-      "hrv": "8",
-      "id": 25
-    },
-    {
-      "date": "12/23",
-      "weight": "170",
-      "consumed": "1800",
-      "burned": "1200",
-      "hrv": "9",
-      "id": 26
-    },
-    {
-      "date": "12/24",
-      "weight": "167",
-      "consumed": "2500",
-      "burned": "1600",
-      "hrv": "7.6",
-      "id": 27
-    },
-    {
-      "date": "12/25",
-      "weight": "181",
-      "consumed": "1100",
-      "burned": "0",
-      "hrv": "7.7",
-      "id": 28
-    },
-    {
-      "date": "12/26",
-      "weight": "183",
-      "consumed": "1000",
-      "burned": "0",
-      "hrv": "8.4",
-      "id": 29
-    },
-    {
-      "date": "2020-12-27",
-      "weight": "160",
-      "consumed": "2000",
-      "burned": "800",
-      "hrv": "8",
-      "id": 30
-    },
-    {
-      "date": "2020-12-28",
-      "weight": "161",
-      "consumed": "1200",
-      "burned": "100",
-      "hrv": "6",
-      "id": 31
-    },
-    {
-      "date": "2020-12-29",
-      "weight": "180",
-      "consumed": "2000",
-      "burned": "800",
-      "hrv": "9",
-      "id": 32
-    },
-    {
-      "date": "2020-12-30",
-      "weight": "165",
-      "consumed": "1200",
-      "burned": "300",
-      "hrv": "7.9",
-      "id": 33
-    },
-    {
-      "date": "2020-12-31",
-      "weight": "1000",
-      "consumed": "2000",
-      "burned": "1200",
-      "hrv": "8.9",
-      "id": 34
->>>>>>> table-modal
-    }
-  ]
+    "DAYS": [{
+            "date": "11/28",
+            "weight": "185",
+            "consumed": "2300",
+            "burned": "619",
+            "hrv": "7.3",
+            "id": 1
+        },
+        {
+            "date": "11/29",
+            "weight": "180",
+            "consumed": "2000",
+            "burned": "0",
+            "hrv": "9",
+            "id": 2
+        },
+        {
+            "date": "11/30",
+            "weight": "175",
+            "consumed": "1900",
+            "burned": "300",
+            "hrv": "9",
+            "id": 3
+        },
+        {
+            "date": "12/1",
+            "weight": "165",
+            "consumed": "2800",
+            "burned": "1722",
+            "hrv": "9",
+            "id": 4
+        },
+        {
+            "date": "12/2",
+            "weight": "160",
+            "consumed": "2000",
+            "burned": "1200",
+            "hrv": "8",
+            "id": 5
+        },
+        {
+            "date": "12/3",
+            "weight": "165",
+            "consumed": "2200",
+            "burned": "1200",
+            "hrv": "9",
+            "id": 6
+        },
+        {
+            "date": "12/4",
+            "weight": "167",
+            "consumed": "2000",
+            "burned": "500",
+            "hrv": "7.6",
+            "id": 7
+        },
+        {
+            "date": "12/5",
+            "weight": "165",
+            "consumed": "1800",
+            "burned": "1800",
+            "hrv": "7.6",
+            "id": 8
+        },
+        {
+            "date": "12/6",
+            "weight": "200",
+            "consumed": "1300",
+            "burned": "100",
+            "hrv": "8",
+            "id": 9
+        },
+        {
+            "date": "12/7",
+            "weight": "167",
+            "consumed": "1800",
+            "burned": "600",
+            "hrv": "8",
+            "id": 10
+        },
+        {
+            "date": "12/8",
+            "weight": "162",
+            "consumed": "2500",
+            "burned": "1200",
+            "hrv": "7.6",
+            "id": 11
+        },
+        {
+            "date": "12/9",
+            "weight": "159",
+            "consumed": "1800",
+            "burned": "0",
+            "hrv": "8.1",
+            "id": 12
+        },
+        {
+            "date": "12/10",
+            "weight": "186",
+            "consumed": "1800",
+            "burned": "300",
+            "hrv": "7.6",
+            "id": 13
+        },
+        {
+            "date": "12/11",
+            "weight": "160",
+            "consumed": "2000",
+            "burned": "100",
+            "hrv": "8",
+            "id": 14
+        },
+        {
+            "date": "12/12",
+            "weight": "185.2",
+            "consumed": "900",
+            "burned": "0",
+            "hrv": "8.1",
+            "id": 15
+        },
+        {
+            "date": "12/13",
+            "weight": "185",
+            "consumed": "900",
+            "burned": "0",
+            "hrv": "8.1",
+            "id": 16
+        },
+        {
+            "date": "12/14",
+            "weight": "184",
+            "consumed": "850",
+            "burned": "0",
+            "hrv": "8.1",
+            "id": 17
+        },
+        {
+            "date": "12/15",
+            "weight": "183",
+            "consumed": "1000",
+            "burned": "0",
+            "hrv": "7.3",
+            "id": 18
+        },
+        {
+            "date": "12/16",
+            "weight": "183",
+            "consumed": "1025",
+            "burned": "0",
+            "hrv": "8.1",
+            "id": 19
+        },
+        {
+            "date": "12/17",
+            "weight": "182",
+            "consumed": "900",
+            "burned": "0",
+            "hrv": "8.3",
+            "id": 20
+        },
+        {
+            "date": "12/18",
+            "weight": "181",
+            "consumed": "1000",
+            "burned": "0",
+            "hrv": "8.9",
+            "id": 21
+        },
+        {
+            "date": "12/19",
+            "weight": "179",
+            "consumed": "890",
+            "burned": "0",
+            "hrv": "7.9",
+            "id": 22
+        },
+        {
+            "date": "12/20",
+            "weight": "181",
+            "consumed": "1100",
+            "burned": "",
+            "hrv": "8.4",
+            "weight": "182",
+            "consumed": "1100",
+            "burned": "0",
+            "hrv": "9",
+            "id": 23
+        },
+        {
+            "date": "12/21",
+            "weight": "180",
+            "consumed": "1000",
+            "burned": "100",
+            "hrv": "8.4",
+            "id": 24
+        },
+        {
+            "date": "2020-12-22",
+            "weight": "181",
+            "consumed": "5000",
+            "burned": "4000",
+            "hrv": "6",
+            "id": 25,
+            "weight": "182",
+            "consumed": "800",
+            "burned": "100",
+            "hrv": "8",
+            "id": 24
+        },
+        {
+            "date": "12/22",
+            "weight": "181",
+            "consumed": "937",
+            "burned": "0",
+            "hrv": "8",
+            "id": 25
+        },
+        {
+            "date": "12/23",
+            "weight": "170",
+            "consumed": "1800",
+            "burned": "1200",
+            "hrv": "9",
+            "id": 26
+        },
+        {
+            "date": "12/24",
+            "weight": "167",
+            "consumed": "2500",
+            "burned": "1600",
+            "hrv": "7.6",
+            "id": 27
+        },
+        {
+            "date": "12/25",
+            "weight": "181",
+            "consumed": "1100",
+            "burned": "0",
+            "hrv": "7.7",
+            "id": 28
+        },
+        {
+            "date": "12/26",
+            "weight": "183",
+            "consumed": "1000",
+            "burned": "0",
+            "hrv": "8.4",
+            "id": 29
+        },
+        {
+            "date": "2020-12-27",
+            "weight": "160",
+            "consumed": "2000",
+            "burned": "800",
+            "hrv": "8",
+            "id": 30
+        },
+        {
+            "date": "2020-12-28",
+            "weight": "161",
+            "consumed": "1200",
+            "burned": "100",
+            "hrv": "6",
+            "id": 31
+        },
+        {
+            "date": "2020-12-29",
+            "weight": "180",
+            "consumed": "2000",
+            "burned": "800",
+            "hrv": "9",
+            "id": 32
+        },
+        {
+            "date": "2020-12-30",
+            "weight": "165",
+            "consumed": "1200",
+            "burned": "300",
+            "hrv": "7.9",
+            "id": 33
+        },
+        {
+            "date": "2020-12-31",
+            "weight": "1000",
+            "consumed": "2000",
+            "burned": "1200",
+            "hrv": "8.9",
+            "id": 34
+        }
+    ]
 }
