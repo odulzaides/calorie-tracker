@@ -8,3 +8,9 @@
     TODO - code an edit function/ lookup individual records
     TODO - code a filter function
     TODO - code a function that alerts when you are over calories in a 3 day period
+
+
+
+    ### Tickets
+TODO FIX - Fix decimals displaying ehre they need to on page.
+    

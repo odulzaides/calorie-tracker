@@ -1,4 +1,5 @@
 export let saveInput = function(i) {
+    console.log("Save Input", i.weight);
     fetch('http://localhost:3000/DAYS', {
         method: 'POST',
         headers: {

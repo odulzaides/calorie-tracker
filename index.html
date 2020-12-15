@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./node_modules/jqueryui/jquery-ui.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Calorie Tracker</title>
 </head>
@@ -32,49 +33,51 @@
     <div class="container-fluid">
         <!-- dashboard  -->
         <div class="dashboard d-flex flex-md-row flex-wrap  justify-content-center col--1-sm">
+            <!--  Calories -->
             <div class="rect align-content-center">
-                <h1 id="3-day-balance">-321</h1>
+                <h1 id="3-day-calorie-balance"></h1>
                 <h4>3 Calorie Day Balance</h4>
                 <div class="d-flex justify-content-around second-figure">
                     <div>
-                        <h3 class="second-figure" id="7-day-balance">-787</h3>
+                        <h3 class="second-figure" id="7-day-calorie-balance">-787</h3>
                         <p>7 Day Bal</p>
                     </div>
                     <div>
-                        <h3 class="second-figure" id="7-day-balance">-787</h3>
+                        <h3 class="second-figure" id="30-day-calorie-balance">-787</h3>
                         <p>1 Month Bal</p>
                     </div>
                 </div>
                 <h2>Calories</h2>
             </div>
+            <!-- Weight -->
             <div class="rect">
-                <h1>180</h1>
+                <h1 id="daily-weight"></h1>
                 <h4>Weight Today</h4>
                 <div class="d-flex justify-content-around second-figure">
                     <div>
-                        <h3 class="second-figure">1</h3>
+                        <h3 id="1-Day-Flux" class="second-figure"></h3>
                         <p>1 Day Flux</p>
                     </div>
                     <div>
-                        <h3 class="second-figure" id="7-day-balance">-787</h3>
-                        <p>1 Month Flux</p>
+                        <h3 id="30-day-avg" class="second-figure" id="7-day-balance"></h3>
+                        <p>30 Day Average</p>
                     </div>
                 </div>
                 <h2>Weight</h2>
             </div>
             <div class="rect">
                 <!-- TODO - Add some more training figures here. time, miles, tss etc -->
-                <h1>8.4</h1>
-                <h4>Yesterday</h4>
+                <h1 id="daily-hrv">8.4</h1>
+                <h4>HRV</h4>
                 <div class="d-flex justify-content-around second-figure">
                     <div>
-                        <h3 class="second-figure">8.4</h3>
+                        <h3 id="7-day-hrv" class="second-figure"></h3>
                         <p>7 Day HRV Avg</p>
                     </div>
-                    <div>
-                        <h3 class="second-figure" id="7-day-balance">-787</h3>
+                    <!-- <div>
+                        <h3 id="trimp-stree-balance" class="second-figure" id="7-day-balance">-787</h3>
                         <p>TRIMP Stress Bal</p>
-                    </div>
+                    </div> -->
                 </div>
                 <h2>Training</h2>
             </div>
@@ -94,7 +97,9 @@
                         </div>
                         <div class="modal-body">
                             <label class="col-md-2 control-label active" type="date" for="date">Date:</label>
-                            <input class="form-control input-sm" autofocus="autofocus" id="date" type="date">
+                            <!-- datepicker -->
+                            <input class="form-control input-sm" autofocus="autofocus" id="datepicker" type="text">
+                            <!--  -->
                             <label class="col-md-2 control-label" for="weight">Weight: </label>
                             <input class="form-control input-sm" id="weight" type="number" step="any">
                             <label class="col-md-2 control-label" for="clarories consumed">Calories Consumed: </label>
@@ -152,7 +157,9 @@
 
     <!-- scripts -->
     <!-- <script src="./src/js/libs/jquery.me.js"></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/jqueryui/jquery-ui.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="module" src="./src/js/main.js"></script>
 </body>
