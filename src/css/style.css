@@ -7,18 +7,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
 :root {
-    --black: rgba(39, 39, 39, 1);
+    --black: rgba(8, 26, 31, 1);
+    --secondBlack: rgba(39, 39, 39, .2);
     --gray: rgba(116, 116, 116, 1);
-    --lightGray: rgba(116, 116, 116, .8);
+    --lightGray: rgba(116, 116, 116, 0.8);
     --orange: rgba(255, 101, 47, .6);
     --brightOrange: rgba(255, 101, 47, 1);
     --yellow: rgba(255, 228, 0, .2);
     --brightYellow: rgba(255, 228, 0, .4);
-    --jade: rgba(20, 167, 108, .9)
+    --jade: rgba(20, 167, 108, .9);
+    --jadeLight: rgba(11, 85, 106 .5);
+    --jadeLightDarker: rgba(11, 85, 106 .8);
 }
 
 body {
-    background-color: white;
+    background-color: var(--black);
     font-family: 'Roboto', 'sans';
 }
 
@@ -26,12 +29,12 @@ body {
 /* navbar */
 
 .navbar {
-    /* background-color: var(--black); */
-    border-bottom: solid .5px var(--brightOrange);
+    background-color: var(--black);
+    border-bottom: solid .5px var(--gray);
 }
 
 .navbar .navbar-brand {
-    color: var(--brightOrange);
+    color: var(--gray);
     font-size: 3rem;
     font-style: italic;
     font-stretch: 1rem;
@@ -62,9 +65,9 @@ body {
     height: 25rem;
     padding-top: 6vmin;
     margin: 2rem 4rem;
-    border: var(--brightOrange) solid 2px;
+    border: var(--gray) solid 2px;
     border-radius: 50%;
-    box-shadow: 1px 2px 50px 0px var(--orange);
+    box-shadow: 1px 1px 25px 0px var(--jadeLight);
 }
 
 .dashboard .rect h1 {
@@ -112,13 +115,14 @@ body {
 
 .btn-data-input,
 .btn-data-input:active {
-    background-color: var(--brightOrange);
+    /* background-color: var(--brightOrange); */
+    background-color: var(--jadeLightDarker);
     height: 4rem;
 }
 
 .btn-data-input:hover,
 .btn-data-input:focus {
-    background-color: var(--orange);
+    background-color: var(--jadeLightDarker);
 }
 
 
@@ -132,12 +136,12 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--black);
 }
 
 .modal-content input,
 .modal-content input:focus {
-    background-color: var(--orange);
+    background-color: var(--jadeLight);
 }
 
 .input-modal-content .split-buttons,
@@ -179,11 +183,12 @@ table>tr>td {
 }
 
 .thead-color {
-    background-color: var(--brightOrange);
+    background-color: var(--jadeLight);
     color: var(--black)
 }
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
 .table-striped>tbody>tr:nth-child(2n+1)>th {
-    background-color: var(--orange);
+    background-color: var(--jadeLight);
+    color: var(--brightOrange)
 }
