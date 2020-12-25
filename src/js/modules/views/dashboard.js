@@ -49,8 +49,13 @@ export function dashboardData(data) {
     thirtyDayAvg.html(thirtyDayWeightFlux);
 
     // HRV
-    dailyHrv.html(hrv.slice(0, 1));
-    sevenDayHrv.html(hrv.slice(0, 7).reduce(function(a, b) {
+    // dailyHrv.html(hrv.slice(0, 1));
+    // sevenDayHrv.html(hrv.slice(0, 7).reduce(function(a, b) {
+    //     return a + b
+    // }) / 7);
+    let sevenDayHrvAvg = hrv.slice(0, 7).reduce(function(a, b) {
         return a + b
-    }) / 7);
+    }) / 7;
+    console.log("Raw Num:", sevenDayHrvAvg)
+    sevenDayHrv.html(Math.round(sevenDayHrvAvg * 10) / 10);
 }
