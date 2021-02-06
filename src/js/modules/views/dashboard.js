@@ -56,6 +56,5 @@ export function dashboardData(data) {
     let sevenDayHrvAvg = hrv.slice(0, 7).reduce(function(a, b) {
         return a + b
     }) / 7;
-    console.log("Raw Num:", sevenDayHrvAvg)
     sevenDayHrv.html(Math.round(sevenDayHrvAvg * 10) / 10);
 }
