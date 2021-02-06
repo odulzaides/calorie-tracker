@@ -16,12 +16,14 @@
     <!-- TODO - Login icon -->
     <!-- Image and text -->
     <nav class="navbar">
-        <a class="navbar-brand align-bottom" href="#">
-         Calorie Tracker
-        </a>
+        <div class="navbar-brand">
+            <a class="align-bottom" href="#">
+                <img src="./assets/icons8-exercise-96.png" /> Fitness Tracker
+            </a>
+        </div>
 
-        <div class="d-flex flex-md-row flex-wrap justify-content-around col--1-sm">
-            <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModalLong">
+        <div class="d-flex flex-md-row flex-wrap justify-content-around col-1-sm nav-data-btns">
+            <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModalLong" data-toggle="tooltip" title="Show daily data table" onclick="this.blur()">
                     Daily Entries
                   </button>
             <button type="button" class="btn btn-primary btn-data-input" data-toggle="modal" data-target="#exampleModal">
@@ -32,7 +34,7 @@
     <!-- Sections -->
     <div class="container-fluid">
         <!-- dashboard  -->
-        <div class="dashboard d-flex flex-md-row flex-wrap  justify-content-center col--1-sm">
+        <div class="dashboard d-flex d-sm-flex d-md-flex flex-md-row flex-wrap justify-content-center col-1-sm">
             <!--  Calories -->
             <div class="rect align-content-center">
                 <h1 id="3-day-calorie-balance"></h1>
@@ -86,10 +88,10 @@
         <!-- input modal -->
         <div class="top-modal">
             <!-- TODO - fix width, top, and left position on 'modal' class-->
-            <div class="modal fade input-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog input-modal">
                     <div class="modal-content input-modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header input-modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>

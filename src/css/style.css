@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
 :root {
-    --black: rgba(8, 26, 31, 1);
+    --black: rgba(0, 0, 0, 1);
     --secondBlack: rgba(39, 39, 39, .2);
     --gray: rgba(116, 116, 116, 1);
     --lightGray: rgba(116, 116, 116, 0.8);
@@ -33,14 +33,54 @@ body {
     border-bottom: solid .5px var(--gray);
 }
 
-.navbar .navbar-brand {
-    color: var(--gray);
+.navbar .navbar-brand a img {
+    height: 4rem;
+    padding-bottom: .7rem;
+}
+
+.navbar .navbar-brand a {
+    color: var(--brightOrange);
     font-size: 3rem;
-    font-style: italic;
+    font-weight: 900;
+    /* font-style: italic; */
     font-stretch: 1rem;
-    padding-left: 1.5rem;
+    padding-left: .5rem;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-left: .2rem;
+}
+
+.nav-data-btns {
+    margin-right: 3rem;
+    /* width: 20%; */
+}
+
+.add-data-btn,
+.btn-data-input {
+    margin-right: .7rem;
+    margin-bottom: 1.1rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.add-data-btn:focus,
+.btn-data-input:focus {
+    border: none;
+    box-shadow: none;
+    color: var(--brightOrange);
+}
+
+.btn-data-input,
+.btn-data-input:active {
+    color: var(--brightOrange);
+    background-color: var(--jadeLightDarker);
+    height: 4rem;
+}
+
+.btn-data-input:hover,
+.btn-data-input:focus {
+    font-weight: 900;
+    background-color: var(--jadeLightDarker);
 }
 
 
@@ -109,44 +149,48 @@ body {
     margin-right: 3rem;
 }
 
-.add-data-btn {
-    margin-bottom: 1.1rem;
-}
-
-.btn-data-input,
-.btn-data-input:active {
-    /* background-color: var(--brightOrange); */
-    background-color: var(--jadeLightDarker);
-    height: 4rem;
-}
-
-.btn-data-input:hover,
-.btn-data-input:focus {
-    background-color: var(--jadeLightDarker);
-}
-
 
 /* Modals */
 
 
 /* input Modal */
 
-.modal-title {
-    color: var(--brightOrange)
+.inpout-modal {
+    box-shadow: 10px 10px 5px var(--brightOrange);
 }
 
-.modal-content {
+.input-modal-header {
+    border-bottom: 1px solid var(--jade);
+}
+
+.modal-title {
+    color: var(--brightOrange);
+}
+
+.input-modal-content {
     background-color: var(--black);
+    box-shadow: var(--brightOrange);
+    margin-top: 1rem;
 }
 
 .modal-content input,
 .modal-content input:focus {
-    background-color: var(--jadeLight);
+    background-color: var(--orange);
+}
+
+.modal-content label {
+    color: var(--jade);
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .input-modal-content .split-buttons,
 .dashboard .split-buttons {
     justify-content: space-between;
+}
+
+.split-buttons {
+    border-top: 1px solid var(--jade);
 }
 
 
