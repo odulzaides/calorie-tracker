@@ -1,5 +1,5 @@
 import { submitInput } from './modules/events/events.js';
-import { saveInput } from './modules/controllers/saveInput.js';
+import { saveInput } from './modules/model/saveInput.js';
 import { getData } from './modules/controllers/getData.js';
 import { viewData } from './modules/views/fillTable.js';
 

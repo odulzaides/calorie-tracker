@@ -1,4 +1,4 @@
-import { saveInput } from '../controllers/saveInput.js';
+import { saveInput } from '../model/saveInput.js';
 
 export function submitInput() {
     console.log("clicked save");

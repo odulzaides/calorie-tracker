@@ -23,12 +23,15 @@ export function dashboardData(data) {
     // Add totals to dashnoard
 
     // Calories
-    threeDayCalorieBal.html(calBal.slice(0, 3).reduce(function(a, b) {
-        return a + b;
-    }));
+    // threeDayCalorieBal.html(calBal.slice(0, 3).reduce(function(a, b) {
+    //     return a + b;
+    // // }));
+    console.log(calBal)
+    threeDayCalorieBal.html(calBal.slice(0, 1));
     sevenDayCalorieBal.html(calBal.slice(0, 7).reduce(function(a, b) {
         return a + b;
     }));
+    console.log(calBal.slice(0, 7));
     thirtyDayCalorieBal.html(calBal.slice(0, 30).reduce(function(a, b) {
         return a + b;
     }));
