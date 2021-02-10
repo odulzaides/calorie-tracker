@@ -13,15 +13,16 @@
     --lightGray: rgba(116, 116, 116, 0.8);
     --orange: rgba(255, 101, 47, .6);
     --brightOrange: rgba(255, 101, 47, 1);
-    --yellow: rgba(255, 228, 0, .2);
+    --brightOrange2: rgba(255, 101, 47, .7);
+    7 --yellow: rgba(255, 228, 0, .2);
     --brightYellow: rgba(255, 228, 0, .4);
     --jade: rgba(20, 167, 108, .7);
-    --jadeLight: rgba(11, 85, 106 .5);
+    --jadeLight: rgba(20, 167, 108, .5);
     --jadeLightDarker: rgba(11, 85, 106 .8);
 }
 
 body {
-    background-color: var(--jade);
+    background-color: var(--jadeLight);
     font-family: 'Roboto', 'sans';
 }
 
@@ -29,8 +30,8 @@ body {
 /* navbar */
 
 .navbar {
-    background-color: var(--black);
-    border-bottom: solid .5px var(--gray);
+    /* background-color: var(--jadeLight); */
+    border-bottom: solid 2px var(--orange);
 }
 
 .navbar .navbar-brand a img {
@@ -89,7 +90,6 @@ body {
 .dashboard {
     margin-top: 8rem;
     height: 47rem;
-    /* background: black; */
     border-radius: 15px;
     /* align-items: center; */
 }
@@ -104,7 +104,7 @@ body {
     width: 25rem;
     height: 25rem;
     padding-top: 6vmin;
-    margin: 2rem 4rem;
+    margin: 2rem 3rem;
     border: var(--gray) solid 2px;
     border-radius: 50%;
     box-shadow: 1px 1px 25px 0px var(--jadeLight);
